@@ -4,10 +4,10 @@ function crearCookie(nombre, valor, caducidad) {
 	var expira = "expires=" + d.toUTCString();
 	document.cookie = nombre + "=" + valor + ";" + expira;
 }
-function borrarCookies(nombre) {
+function borrarCookie(nombre) {
     document.cookie = nombre + '=; expires=Thu, 01 Jan 1970 00:00:01 GMT;';
 }
-function leerCookies(nombre) {
+function leerCookie(nombre) {
 	/* Creamos una variable con el string a buscar mas el = */
 	var cadena = nombre + "=";
 	/* comprobamos si existen cookies */
